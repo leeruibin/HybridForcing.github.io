@@ -30,6 +30,15 @@
                 font-size: 1.4rem;
             }
         }
+        
+        /* prompt 文本单独控制字体大小 */
+        .subsection-title::after {
+            content: attr(data-prompt);
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: inherit;
+            flex-basis: 100%;
+        }
 
         /* Title wrapper for badge positioning */
         .title-wrapper {
@@ -75,7 +84,7 @@
                 <div class="divider"></div>
                 <p class="subtitle">
                     <a href="" target="_blank">Ruibin Li</a><sup>1,2</sup>, <a href="" target="_blank">Tao Yang</a><sup>1</sup>, <a href="" target="_blank">Fangzhou Ai</a><sup>1</sup>, <a href="" target="_blank">Tianhe Wu</a><sup>3</sup>, <a href="" target="_blank">Shilei Wen</a><sup>1</sup>, <a href="" target="_blank">Bingyue Peng</a><sup>1</sup>, <a href="" target="_blank">Lei Zhang</a><sup>2</sup><br>
-                    <sup>1</sup>ByteDance &nbsp; <sup>2</sup><a href="" target="_blank">The Hong Kong Polytechnic University</a> &nbsp; <sup>3</sup><a href="" target="_blank">City University of Hong Kong</a>
+                    <sup>1</sup>ByteDance &nbsp; <sup>2</sup>The Hong Kong Polytechnic University &nbsp; <sup>3</sup>City University of Hong Kong
                 </p>
                 <div class="button-container">
                     <a href="xxx" class="rounded-button" target="_blank">
@@ -166,6 +175,7 @@
             <div class="qualitative-subsection">
                 <h3 class="subsection-title">
                     5s Short duration inference cases 1 (832x480)
+                    <span class="prompt-text">A bicycle gliding smoothly through a snowy field at twilight. The bicycle is a classic model with a wooden frame and leather handlebars, painted a deep shade of green. The rider, a young woman with long, wavy blonde hair tied back in a ponytail, is wearing a warm winter coat, boots, and gloves. She pedals effortlessly, her face lit by the soft glow of the setting sun. The snow-covered field stretches out behind her, with tall, frosted grasses and occasional patches of bare ground. In the distance, a few trees stand still, their branches heavy with snow. The sky is a mix of pale blues and purples, with a few stars beginning to twinkle. A gentle breeze rustles the snow, creating a peaceful, serene atmosphere. The scene is captured in a smooth, cinematic style, with a medium shot following the bicycle as it moves forward.</span>
                     <div class="video-controls">
                         <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
                         <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
@@ -266,6 +276,7 @@
             <div class="qualitative-subsection">
               <h3 class="subsection-title">
                   5s Short duration inference cases 2 (832x480)
+                  <span class="prompt-text">A motorcycle racing through a winding road, making a sharp turn. The rider, a young man with short dark hair and intense focus, leans into the curve, his body slightly hunched over the handlebars. His helmet is securely fastened, and he grips the handlebars tightly. The motorcycle has a sleek, black exterior with red accents, and its engine roars as it speeds around the bend. The background shows blurred trees and scenery passing by quickly. The road is wet and slightly muddy, adding to the sense of speed and action. The camera follows the motorcycle from behind, capturing the dynamic motion and the thrill of the ride. High-speed, dynamic shot with a smooth panning effect.</span>
                   <div class="video-controls">
                       <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
                       <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
@@ -365,6 +376,7 @@
           <div class="qualitative-subsection">
             <h3 class="subsection-title">
                 5s Short duration inference cases 3 (832x480)
+                <span class="prompt-text">A storm trooper from Star Wars cleaning the beach in a methodical manner. The storm trooper is wearing the classic white armor with a helmet that partially obscures their face, giving them a stern expression. They are using a large, industrial vacuum cleaner, moving slowly across the sand to pick up debris. The beach is partially visible, with waves gently lapping at the shore in the background. The sky is overcast, with dark clouds suggesting an approaching storm. The shot is medium close-up, focusing on the storm trooper's movements and the vacuum cleaner's operation. Natural sweeping motions and the trooper's deliberate steps add to the scene's authenticity. The background shows a few other storm troopers in the distance, walking towards the camera.</span>
                 <div class="video-controls">
                     <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
                     <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
@@ -464,6 +476,7 @@
         <div class="qualitative-subsection">
           <h3 class="subsection-title">
               30s Long duration inference cases 1 (832x480)
+              <span class="prompt-text">Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.</span>
               <div class="video-controls">
                   <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
                   <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
@@ -563,6 +576,7 @@
       <div class="qualitative-subsection">
         <h3 class="subsection-title">
             30s Long duration inference cases 2 (832x480)
+            <span class="prompt-text">A turtle swimming gracefully in the vast ocean, surrounded by clear blue water and gentle waves. The turtle has a smooth, dark green shell with a few light yellow stripes, and its head is slightly turned to the side as it swims. Its flippers move rhythmically, propelling it forward. The background features a vibrant ocean landscape with colorful coral reefs, schools of fish, and floating seaweed. The water is crystal clear, allowing the viewer to see the underwater world vividly. The turtle appears content and serene, gliding through the water with ease. The shot is a medium shot from a slightly overhead angle, capturing the turtle in mid-swim.</span>
             <div class="video-controls">
                 <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
                 <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
@@ -662,6 +676,7 @@
     <div class="qualitative-subsection">
       <h3 class="subsection-title">
           30s Long duration inference cases 3 (832x480)
+          <span class="prompt-text">Two playful-looking pandas, one with a slightly puzzled expression and the other with a curious gaze, are sitting across from each other on a bamboo mat in a serene bamboo forest. They are discussing an academic paper, their ears perked up as they exchange ideas. One panda holds a rolled-up paper in its front paws, while the other leans forward, listening intently. The background is lush and green, with sunlight filtering through the dense foliage, creating dappled patterns on the ground. The atmosphere is peaceful and intellectual. The pandas move their heads slightly to show interest and occasionally tap their paws together in agreement. The scene is captured in a medium shot, with a soft focus on the pandas' faces and a blurred, natural forest background. The style is realistic and detailed, with a warm color palette.</span>
           <div class="video-controls">
               <button class="control-btn restart-btn" data-action="restart" data-subsection="single-subject">↻</button>
               <button class="control-btn play-btn" data-action="play" data-subsection="single-subject">▶</button>
